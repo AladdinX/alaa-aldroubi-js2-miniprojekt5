@@ -12,6 +12,6 @@ export class Comment {
     document.querySelector('#comment-container').append(h3);
   }
   public clearDOM(): void {
-    document.querySelector(`#${this.id}`).remove();
+    (document.querySelector(`#${this.id}`) as HTMLHeadingElement).remove();
   }
 } 
