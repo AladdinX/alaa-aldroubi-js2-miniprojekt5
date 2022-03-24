@@ -7,7 +7,6 @@ const userNameValue = document.querySelector('#user-name') as HTMLInputElement;
 let comments: Comment[] = [];
 
 document.querySelector('#start-button').addEventListener('click', () => {
-  (document.querySelector('#start-div') as HTMLDivElement).style.display = 'none';
   (document.querySelector('#welcome-massage') as HTMLHeadingElement).innerText = `Hello ${userNameValue.value} if u want to delete your old comments click on it !!!`;
   onValue(dbRef, snapshot => {
     (document.querySelector('#comment-container') as HTMLDivElement).style.display = 'inline-block';
@@ -32,6 +31,7 @@ document.querySelector('#start-button').addEventListener('click', () => {
         })
       }
     }
+    (document.querySelector('#start-div') as HTMLDivElement).style.display = 'none';
   })
 });
 
