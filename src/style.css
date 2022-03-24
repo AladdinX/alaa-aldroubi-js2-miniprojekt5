@@ -7,18 +7,24 @@ body {
 #comment-container {
   display: none;
 }
-
+#user-name,
+#start-button {
+  margin-top: 10rem;
+  height: 15rem;
+  width: 15rem;
+}
 div.scroll {
   margin-top: 10%;
-  align-self: center;
   background-color: rgb(100, 150, 200);
   width: 600px;
   height: 350px;
   overflow: auto;
   text-align: justify;
-  /* padding: 50px; */
 }
 
 form#comment-form {
   display: none;
+}
+#new-comment {
+  width: 25rem;
 }
