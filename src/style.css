@@ -18,3 +18,7 @@ div.scroll {
   text-align: justify;
   /* padding: 50px; */
 }
+
+form#comment-form {
+  display: none;
+}

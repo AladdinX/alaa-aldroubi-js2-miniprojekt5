@@ -8,6 +8,7 @@ let comments: Comment[] = [];
 
 document.querySelector('#start-button').addEventListener('click', () => {
   (document.querySelector('#welcome-massage') as HTMLHeadingElement).innerText = `Hello ${userNameValue.value} if u want to delete your old comments click on it !!!`;
+  (document.querySelector('#comment-form') as HTMLFormElement).style.display = 'block'
   onValue(dbRef, snapshot => {
     (document.querySelector('#comment-container') as HTMLDivElement).style.display = 'inline-block';
     const commentsData = snapshot.val();
